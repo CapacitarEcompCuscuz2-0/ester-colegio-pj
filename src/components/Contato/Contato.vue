@@ -74,6 +74,10 @@
         justify-content: space-between;
     }
 
+    #conteudo-contato h2{
+        text-align: left;
+    }
+
     .itens-contato{
         color: #5F5858;
         display: flex;
@@ -88,6 +92,7 @@
     .itens-contato p{
         margin: 0;
         margin-bottom: 1vh;
+        text-align: left;
     }
 
     #img-mapa{
@@ -100,6 +105,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    #redes-sociais p{
+        text-align: left;
     }
 
     #redes-sociais a img{
