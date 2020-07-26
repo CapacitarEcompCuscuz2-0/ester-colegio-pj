@@ -8,14 +8,37 @@
             </div>
         </div>
         <div id="menu">
-            <a href="#home"><p>HOME</p></a>
+            <button v-on:click="rolar">HOME</button>
+            <button v-on:click="rolar">SOBRE</button>
+            <button v-on:click="rolar">DEPOIMENTOS</button>
+            <button v-on:click="rolar">RESULTADOS</button>
+            <button v-on:click="rolar">CONTATO</button>
+            <!--<a v-on:click="rolar"><p>HOME</p></a>
             <a href="#sobre"><p>SOBRE</p></a>
             <a href="#depoimentos"><p>DEPOIMENTOS</p></a>
             <a href="#resultados"><p>RESULTADOS</p></a>
-            <a href="#contato"><p>CONTATO</p></a>
+            <a href="#contato"><p>CONTATO</p></a>-->
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name:'Menu',
+    methods: {
+        rolar : function(event) {
+            var elemento = event.currentTarget
+            var idAlvo = elemento.innerHTML.toLowerCase()
+            var coord = document.getElementById(idAlvo).offsetTop
+            
+            window.scroll({
+                top: coord,
+                behavior: 'smooth',
+            })
+        }
+    }
+}
+</script>
 
 <style scoped>
     #navbar{
@@ -67,8 +90,15 @@
         justify-content: space-between;
     }
 
-    #menu a:visited, a:link, a:active, a:hover{
-        text-decoration: none;
+    #menu button{
+        background-color: transparent;
+        border-color: transparent;
         color: white;
     }
+
+    /*#menu a:visited, a:link, a:active, a:hover{
+        text-decoration: none;
+        color: white;
+    }*/
+
 </style>
