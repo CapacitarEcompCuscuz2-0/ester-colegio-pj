@@ -12,7 +12,7 @@
             <button v-on:click="rolar">SOBRE</button>
             <button v-on:click="rolar">DEPOIMENTOS</button>
             <button v-on:click="rolar">RESULTADOS</button>
-            <button v-on:click="rolar">CONTATO</button>
+            <button v-on:click="rolarespecial"><router-link  to="/Contato">CONTATO</router-link></button>
             <!--<a v-on:click="rolar"><p>HOME</p></a>
             <a href="#sobre"><p>SOBRE</p></a>
             <a href="#depoimentos"><p>DEPOIMENTOS</p></a>
@@ -33,6 +33,12 @@ export default {
             
             window.scroll({
                 top: coord,
+                behavior: 'smooth',
+            })
+        },
+        rolarespecial: function () {
+            window.scroll({
+                top: 0,
                 behavior: 'smooth',
             })
         }
@@ -93,6 +99,11 @@ export default {
     #menu button{
         background-color: transparent;
         border-color: transparent;
+        color: white;
+    }
+
+    router-link{
+        text-decoration: none;
         color: white;
     }
 

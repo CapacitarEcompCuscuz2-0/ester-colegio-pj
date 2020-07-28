@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <Navbar/>
+    <transition name="fade">
+      <router-view></router-view>
+    </transition>
     <BannerVue/>
     <Sobre/>
     <Depoimentos/>
@@ -26,7 +29,7 @@ export default {
     Sobre,
     Depoimentos,
     Resultados,
-    Contato
+    Contato,
   }
 }
 </script>
@@ -41,5 +44,11 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1.5s;
+  }
+  .fade-enter, .fade-leave-to{
+    opacity: 0;
   }
 </style>
