@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div>
-                    <img id="img-mapa" src="./Captura de Tela (1) 1.png" alt="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.410386945646!2d-34.905713285220166!3d-8.059554094196896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ded1bc6309%3A0xaf428d791ebffe71!2sEscola%20Polit%C3%A9cnica%20de%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1596520281225!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     <div id="redes-sociais">
                         <p>Clique nos ícones<br>para acessá-los</p>
                         <a href="https://www.youtube.com/" target="_blank">
@@ -93,10 +93,6 @@
         margin: 0;
         margin-bottom: 1vh;
         text-align: left;
-    }
-
-    #img-mapa{
-        width: 25vw;
     }
 
     #redes-sociais{

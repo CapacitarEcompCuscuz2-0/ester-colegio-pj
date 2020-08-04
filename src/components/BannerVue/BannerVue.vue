@@ -1,7 +1,9 @@
 <template>
     <div id="home">
         <Swiper class="swiper" :options="swiperOption">
-            <SwiperSlide></SwiperSlide>
+            <SwiperSlide>
+                <strong><h1>FAÇA JÁ SUA<br>MATRÍCULA!</h1></strong>
+            </SwiperSlide>
             <SwiperSlide></SwiperSlide>
             <SwiperSlide></SwiperSlide>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -44,8 +46,15 @@ export default {
     #home{
         width: 100%;
         height: 86.6vh;
-        padding-top: 13.4vh;
         background-color: #EAE1E1;
+    }
+
+    h1{
+        color: white;
+        text-align: left;
+        margin-left: 3%;
+        margin-top: 23vh;
+        font-size: 4rem;
     }
 
     .swiper-container{

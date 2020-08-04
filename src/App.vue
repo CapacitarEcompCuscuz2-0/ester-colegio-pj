@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <Navbar/>
-    <transition name="fade">
-      <router-view></router-view>
-    </transition>
+    <div id="rota">
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </div>
     <BannerVue/>
     <Sobre/>
     <Depoimentos/>
@@ -35,15 +37,19 @@ export default {
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   body{
     margin: 0;
   }
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+  #rota{
+    margin-top: 13.4vh;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity 1.5s;

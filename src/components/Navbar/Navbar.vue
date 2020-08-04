@@ -12,12 +12,7 @@
             <button v-on:click="rolar">SOBRE</button>
             <button v-on:click="rolar">DEPOIMENTOS</button>
             <button v-on:click="rolar">RESULTADOS</button>
-            <button v-on:click="rolarespecial"><router-link  to="/Contato">CONTATO</router-link></button>
-            <!--<a v-on:click="rolar"><p>HOME</p></a>
-            <a href="#sobre"><p>SOBRE</p></a>
-            <a href="#depoimentos"><p>DEPOIMENTOS</p></a>
-            <a href="#resultados"><p>RESULTADOS</p></a>
-            <a href="#contato"><p>CONTATO</p></a>-->
+            <button v-on:click="rolarespecial"><router-link to="/Contato">CONTATO</router-link></button>
         </div>
     </div>
 </template>
@@ -30,6 +25,14 @@ export default {
             var elemento = event.currentTarget
             var idAlvo = elemento.innerHTML.toLowerCase()
             var coord = document.getElementById(idAlvo).offsetTop
+
+            if (idAlvo == 'home') {
+                if (document.getElementById('contato-form') != null) {
+                    coord -= document.getElementById('contato-form').offsetTop
+                } else {
+                    coord = 0
+                }
+            }
             
             window.scroll({
                 top: coord,
@@ -51,6 +54,7 @@ export default {
         color: white;
         background-color: rgba(69, 65, 255, 0.8);
         position: fixed;
+        top: 0;
         height: 13.4vh;
         width: 94%;
         padding-right: 3%;
@@ -58,6 +62,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
     }
 
     #logo{
@@ -100,16 +105,11 @@ export default {
         background-color: transparent;
         border-color: transparent;
         color: white;
+        cursor: pointer;
     }
 
-    router-link{
+    #menu a{
         text-decoration: none;
         color: white;
     }
-
-    /*#menu a:visited, a:link, a:active, a:hover{
-        text-decoration: none;
-        color: white;
-    }*/
-
 </style>

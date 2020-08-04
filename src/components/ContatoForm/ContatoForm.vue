@@ -24,13 +24,12 @@
     #contato-form{
         background-color: #EAE1E1;
         width: 100%;
-        height: 86.6vh;
-        padding-top: 13.6vh;
+        height: 86.5vh;
+        padding-top: 8vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        justify-content: space-evenly;
         font-size: 1.5rem;
     }
 
