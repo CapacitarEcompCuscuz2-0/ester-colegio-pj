@@ -1,6 +1,6 @@
 <template>
     <div id="sobre">
-        <p>SOBRE</p>
+        <h1>SOBRE</h1>
         <img src="./pencil 1.png" alt="lapis">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt
@@ -25,21 +25,19 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        font-size: 1.5rem;
     }
-
     #sobre :nth-child(1){
         margin: 0;
-        width: 13%;
-        font-size: 6.7vh;
+        width: fit-content;
     }
-
     #sobre img{
         width: 7.3%;
     }
-
     #sobre :nth-child(3){
         margin: 0;
-        width: 71%;
-        font-size: 3.3vh;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: fit-content;
     }
 </style>

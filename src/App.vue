@@ -39,6 +39,7 @@ export default {
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   body{
+    width: 100%;
     margin: 0;
   }
   #app {

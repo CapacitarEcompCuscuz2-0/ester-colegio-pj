@@ -21,13 +21,12 @@
         width: 100%;
         height: 86.6vh;
         padding-top: 13.4vh;
-        font-size: 2.2em;
+        font-size: 1.6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
     }
-
     #resultados h1{
         margin: 0;
         padding-top: 4vh;
@@ -35,31 +34,31 @@
         color: #4541FF;
         text-align: center;
     }
-
+    
     #transparente{
         background-image: url("./university 3.png");
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 32vw 72vh;
+        background-size: 32vw;
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         padding: 3vh 2vh 3vh 2vh;
-        font-size: 8.9vh;
-        text-align: justify;
         height: 53vh;
         width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        font-size: 2.9rem;
     }
-
     #transparente :nth-child(1) {
         margin: 0;
         color: #4541FF;
     }
-
     #transparente :nth-child(2) {
         margin: 0;
         color: white;
     }
-
     #transparente :nth-child(3) {
         margin: 0;
         color: black;

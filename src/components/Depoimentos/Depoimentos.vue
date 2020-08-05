@@ -66,12 +66,17 @@
     #depoimentos{
         color: #4541FF;
         background-color: #EAE1E1;
-        height: 350vh;
+        height: 330vh;
         width: 100%;
         padding-top: 13.4vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 1.4rem;
     }
 
     #book{
@@ -93,13 +98,12 @@
     }
 
     #depoimentos h1{
-        font-size: 4.5rem;
+        margin: 0;
         padding-top: 4.4vh;
         padding-bottom: 4.4vh;
     }
 
     #depoimentos h3{
-        font-size: 2.2rem;
         max-width: fit-content;
     }
 
@@ -108,7 +112,6 @@
     }
 
     .dep-texto{
-        font-size: 1.6rem;
         text-align: justify;
         width: 63%;
     }

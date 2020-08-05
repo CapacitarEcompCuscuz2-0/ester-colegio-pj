@@ -53,8 +53,8 @@ export default {
         color: white;
         text-align: left;
         margin-left: 3%;
-        margin-top: 23vh;
-        font-size: 4rem;
+        margin-top: 13vh;
+        font-size: 3.3rem;
     }
 
     .swiper-container{
@@ -63,8 +63,10 @@ export default {
 
     .swiper-slide{
         background-image: url('slide1.png');
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
         width: 100%;
-        background-position: center -15vh;
+        height: auto;
+        background-position: center center;
     }
 </style>
